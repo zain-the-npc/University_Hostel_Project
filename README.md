@@ -18,3 +18,6 @@
  **Database:** MySQL (Workbench)  
 
 
+**Video demonstration** https://www.linkedin.com/posts/zainthenpc_databasedesign-mysql-codingjourney-activity-7364411937310310400-dMsB?utm_source=share&utm_medium=member_android&rcm=ACoAAFvOYaQB6LhPaJn9jHJo3RbZRkCIFJ-23-w
+
+
