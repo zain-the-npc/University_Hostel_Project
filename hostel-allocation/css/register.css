@@ -1,0 +1,167 @@
+/* Base styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: url('../images/flowerspicbridge.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    color: #ffffff;
+
+}
+
+
+
+/* Registration container */
+.register-container {
+    background: rgba(30, 30, 30, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    width: 350px;
+    margin: 60px auto;
+    padding: 26px 22px;
+    border-radius: 16px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.register-container:hover {
+    transform: scale(1.015);
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #f1f1f1;
+}
+
+/* Form fields */
+label {
+    display: block;
+    text-align: left;
+    font-size: 14px;
+    margin-bottom: 6px;
+    color: #e0e0e0;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select {
+    width: 100%;
+    padding: 11px 14px;
+    margin-bottom: 14px;
+    border: none;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.07);
+    font-size: 14px;
+    color: #ffffff;
+    box-sizing: border-box;
+    transition: box-shadow 0.2s ease-in-out;
+}
+
+input::placeholder,
+select option {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+input:focus,
+select:focus {
+    outline: none;
+    box-shadow: 0 0 8px rgba(0, 204, 255, 0.4);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* Button */
+button {
+    width: 100%;
+    padding: 11px;
+    margin-top: 12px;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #2c2c54 0%, #8e44ad 100%);
+    color: #f2f2f2;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(142, 68, 173, 0.4);
+    transition: all 0.3s ease;
+}
+/* Fix dropdown options */
+select {
+    background-color: rgba(255, 255, 255, 0.07);
+    color: #ffffff;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+select option {
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+/* Success Message */
+.success-message {
+    text-align: center;
+    color: #d4edda;
+    background-color: rgba(40, 167, 69, 0.2);
+    border: 1px solid #28a745;
+    padding: 12px;
+    border-radius: 8px;
+    margin: 20px auto;
+    max-width: 400px;
+    font-size: 16px;
+    font-weight: 500;
+    box-shadow: 0 0 10px rgba(40, 167, 69, 0.2);
+}
+
+/* Error Message */
+.error-message {
+    text-align: center;
+    color: #f8d7da;
+    background-color: rgba(220, 53, 69, 0.2);
+    border: 1px solid #dc3545;
+    padding: 12px;
+    border-radius: 8px;
+    margin: 20px auto;
+    max-width: 400px;
+    font-size: 16px;
+    font-weight: 500;
+    box-shadow: 0 0 10px rgba(220, 53, 69, 0.2);
+}
+/* Warning Message */
+.warning-message {
+    text-align: center;
+    color: #856404;
+    background-color: rgba(255, 243, 205, 0.9);
+    border: 1px solid #ffeeba;
+    padding: 12px;
+    border-radius: 8px;
+    margin: 20px auto;
+    max-width: 400px;
+    font-size: 16px;
+    font-weight: 500;
+    box-shadow: 0 0 10px rgba(255, 193, 7, 0.2);
+}
+
+
+button:hover {
+    background: linear-gradient(135deg, #1e1e38 0%, #6c3483 100%);
+    box-shadow: 0 0 15px rgba(142, 68, 173, 0.6);
+    transform: translateY(-2px);
+}
+
+/* Link */
+a {
+    color: #ddd;
+    display: inline-block;
+    margin-top: 14px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+a:hover {
+    color: #fff;
+    text-decoration: underline;
+}

@@ -1,0 +1,121 @@
+/* General Body Settings */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: url('../images/adminpic.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+/* Overlay for background */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* Darken the background for readability */
+    z-index: -1;
+}
+
+/* Dashboard Container */
+.dashboard-container {
+    background-color: rgba(0, 0, 0, 0.7); /* Dark background for the form */
+    padding: 40px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.6);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover */
+}
+
+/* Form hover effect */
+.dashboard-container:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+    box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.5); /* Enhanced shadow effect */
+}
+
+/* Welcome Header */
+h1 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #fff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    margin-bottom: 30px;
+}
+
+/* Hide extra heading */
+h2 {
+    display: none;
+}
+
+/* Button Styles */
+.actions button,
+.logout-container button {
+    width: 100%;
+    padding: 15px;
+    margin: 12px 0;
+    border: none;
+    border-radius: 8px;
+    background-color: rgba(78, 115, 223, 0.8); /* Lighter blue like the login button */
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    text-transform: uppercase;
+}
+
+/* Button Hover Effect */
+.actions button:hover,
+.logout-container button:hover {
+    background-color: rgba(46, 89, 217, 0.8); /* Darker blue shade on hover */
+    transform: scale(1.05); /* Slight zoom effect */
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3); /* Add a subtle shadow */
+}
+
+/* Additional Links */
+form a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    margin-top: 15px;
+    display: block;
+    transition: color 0.3s ease;
+}
+
+form a:hover {
+    color: #4e73df; /* Highlight link color */
+}
+
+/* Logout button spacing */
+.logout-container {
+    margin-top: 50px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 28px;
+    }
+
+    .dashboard-container {
+        padding: 30px;
+        width: 90%;
+        max-width: 350px;
+    }
+
+    .actions button,
+    .logout-container button {
+        padding: 12px;
+        font-size: 16px;
+    }
+}

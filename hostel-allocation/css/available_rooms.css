@@ -1,0 +1,172 @@
+/* Background and Body Styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: url('../images/hostelpic.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    backdrop-filter: brightness(0.6); /* Reduce dullness */
+    color: #fff;
+}
+
+/* Translucent Container for Content */
+.container {
+    background-color: rgba(0, 0, 0, 0.75); /* Black translucent background */
+    padding: 40px;
+    max-width: 1000px;
+    margin: 80px auto;
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Remove any default border or outline */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+h1 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+/* Room container to manage boys and girls rooms */
+.room-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Room section (Boys' and Girls' Rooms) */
+.room-section {
+    width: 48%;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8); /* Slightly darker for sections */
+    border-radius: 8px;
+    border: 1px solid #444;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #444;
+    color: #fff;
+}
+
+th, td {
+    padding: 12px 16px;
+    text-align: center;
+    font-size: 16px;
+}
+
+th {
+    background-color: #28a745;
+    font-weight: bold;
+}
+
+td {
+    background-color: #2d2d2d;
+}
+
+/* Apply Button (Styled & Hover Effect) */
+a.button {
+    display: inline-block;
+    padding: 8px 16px;
+    margin: 4px 0;
+    color: #fff;
+    background-color: #28a745;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+a.button:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+/* Text for Room Full */
+span {
+    color: #dc3545;
+    font-weight: bold;
+}
+
+/* Back to Dashboard Button (Centered & Styled) */
+/* Back to Dashboard Button (Clean Blue Style) */
+/* Back to Dashboard Button (Centered, Blue, Interactive) */
+a.back-button {
+    display: block;
+    margin: 40px auto 0 auto; /* center horizontally */
+    padding: 12px 30px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 123, 255, 0.3);
+    transition: all 0.3s ease;
+}
+
+a.back-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+    box-shadow: 0 6px 18px rgba(0, 123, 255, 0.4);
+}
+
+
+
+.alert-box {
+    background-color: rgba(220, 53, 69, 0.95); /* Bootstrap danger red */
+    color: white;
+    padding: 15px 20px;
+    border-radius: 8px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(220, 53, 69, 0.3);
+    animation: fadeInSlide 0.5s ease;
+}
+
+@keyframes fadeInSlide {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.custom-alert.success {
+    background-color: #28a745;
+    color: white;
+    padding: 16px;
+    margin-bottom: 20px;
+    text-align: center;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0 4px 12px rgba(40, 167, 69, 0.4);
+}
+

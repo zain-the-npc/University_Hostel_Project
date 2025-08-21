@@ -1,0 +1,105 @@
+/* Base styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: url('../images/flowerspicbridge.jpeg') no-repeat center center fixed;
+    background-size: cover; /* Keeps the zoom effect */
+    background-position: center center;
+    background-attachment: fixed;
+    color: #ffffff;
+}
+
+/* Login container */
+.login-container {
+    background: rgba(30, 30, 30, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    width: 310px;
+    margin: 80px auto;
+    padding: 24px 20px;
+    border-radius: 16px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.login-container:hover {
+    transform: scale(1.015);
+}
+
+/* Logo & Heading */
+.login-container img {
+    margin-bottom: 12px;
+    border-radius: 8px;
+}
+
+h2 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 18px;
+    letter-spacing: 0.5px;
+    color: #e0e0e0;
+}
+
+/* Inputs */
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 11px 14px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.07);
+    font-size: 14px;
+    color: #ffffff;
+    box-sizing: border-box;
+    text-align: left;
+    transition: box-shadow 0.2s ease-in-out;
+}
+
+input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    outline: none;
+    box-shadow: 0 0 8px rgba(0, 204, 255, 0.4);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+button {
+    width: 100%;
+    padding: 11px;
+    margin-top: 12px;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #2c2c54 0%, #8e44ad 100%);
+    color: #f2f2f2;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(142, 68, 173, 0.4);
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #1e1e38 0%, #6c3483 100%);
+    box-shadow: 0 0 15px rgba(142, 68, 173, 0.6);
+    transform: translateY(-2px);
+}
+
+/* Form spacing */
+form {
+    margin-bottom: 14px;
+}
+
+/* Error message */
+.error-message {
+    color: #ff6b6b;
+    background: rgba(255, 255, 255, 0.08);
+    padding: 8px;
+    border-radius: 6px;
+    margin-bottom: 12px;
+    font-weight: 500;
+}
