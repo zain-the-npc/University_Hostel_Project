@@ -1,6 +1,6 @@
 #  Hostel Management System  
 
--- A full-stack **Hostel Management System** built with **PHP, MySQL, HTML, CSS**, and a clean user interface.  
+--A full-stack **Hostel Management System** built with **PHP, MySQL, HTML, CSS**, and a clean user interface.  
 -- Developed as a **4th Semester Project** for managing hostel operations efficiently.  
 
 ---
