@@ -6,7 +6,7 @@
 ---
 
 ## Features  
--- **User Authentication** – Secure login & signup with encrypted passwords.  
+--**User Authentication** – Secure login & signup with encrypted passwords.  
 -- **Student Dashboard** – Apply for vacant rooms, view roommates, and leave rooms.  
 -- **Admin Panel** – Approve/reject applications and manage student requests.  
 -- **Notifications** – Students receive updates on application status.  
